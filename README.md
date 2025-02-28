@@ -23,20 +23,20 @@ Bu proje, beyin tümörü olup olmadığını belirleyen bir CNN (Convolutional 
 
 ### 1. Modeli Eğitme
 ```bash
-python train.py
+python Brain_Tumor_Detection_Train.py
 ```
 Bu komut, veri setini okuyarak bir CNN modeli eğitir ve modeli `BrainTumor150EpochsCategorical.keras` dosyasına kaydeder.
 
 ### 2. Modeli Test Etme
 ```bash
-python test.py
+python Brain_Tumor_Detection_Test.py
 ```
 Bu komut, eğitilmiş modeli yükleyerek yeni görüntüler üzerinde tahmin yapar ve sonuçları görselleştirir.
 Not: Test için kendim oluşturduğum "pred" dosyasını projeye yükledim.
 
 ## Dosya Açıklamaları
-- `train.py`: Modelin eğitimini gerçekleştiren Python kodu.
-- `test.py`: Eğitilmiş modeli kullanarak yeni görüntüler üzerinde tahmin yapan Python kodu.
+- `Brain_Tumor_Detection_Train.py`: Modelin eğitimini gerçekleştiren Python kodu.
+- `Brain_Tumor_Detection_Test.py`: Eğitilmiş modeli kullanarak yeni görüntüler üzerinde tahmin yapan Python kodu.
 
 ## Model Detayları
 Model, aşağıdaki mimariye sahiptir:
